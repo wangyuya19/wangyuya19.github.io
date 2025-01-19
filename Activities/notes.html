@@ -62,7 +62,7 @@
 <meta property="og:image" content="http://example.com/images/202011.jpg">
 <meta property="og:image" content="http://example.com/images/201701.jpg">
 <meta property="article:published_time" content="2023-06-15T05:06:03.000Z">
-<meta property="article:modified_time" content="2025-01-19T07:43:33.630Z">
+<meta property="article:modified_time" content="2025-01-19T08:07:32.185Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/20231027.jpg">
 
@@ -243,7 +243,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 900px;
-    height: 80%;
+    height: 70%;
     max-height: 1000px;
     background: rgba(0, 0, 0, 0.8);
     justify-content: center;
@@ -251,21 +251,22 @@
     z-index: 1000;
   }
   .lightbox img {
+    
     max-width: 90%;
     max-height: 90%;
   }
   .lightbox-title {
     position: absolute;
-    top: 5%; /* 调整标题位置，确保标题不遮挡图片 */
+    top: 90%; /* 调整标题位置，确保标题不遮挡图片 */
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     white-space: nowrap; /* 防止标题换行 */
   }
   .prev, .next {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     color: white;
     font-size: 30px;
@@ -374,7 +375,7 @@
     lightboxImg.src = fullImgSrc;
     lightboxTitle.textContent = title; // 设置lightboxTitle的文本内容
     // 显示lightbox
-    lightbox.style.display = 'flex';
+    lightbox.style.display = 'block';
 
   
 
