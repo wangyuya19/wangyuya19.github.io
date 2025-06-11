@@ -1,3 +1,6 @@
-.menu .menu-item a {
-  font-size: 16px !important; /* 你可以将16px修改为你想要的字体大小 */
+.post-without-title .post-title {
+  display: none;
+}
+.post-without-title .post-body {
+  margin-top: -100px;
 }

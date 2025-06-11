@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #371a67;
+  background: #ffa169;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1293,52 +1293,6 @@ pre .javascript .function {
 }
 .sidebar-toggle:hover .toggle-line {
   background: #87daff;
-}
-.post-toc {
-  font-size: 0.875em;
-}
-.post-toc ol {
-  list-style: none;
-  margin: 0;
-  padding: 0 2px 5px 10px;
-  text-align: left;
-}
-.post-toc ol > ol {
-  padding-left: 0;
-}
-.post-toc ol a {
-  transition-property: all;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-.post-toc .nav-item {
-  line-height: 1.8;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.post-toc .nav .nav-child {
-  display: none;
-}
-.post-toc .nav .active > .nav-child {
-  display: block;
-}
-.post-toc .nav .active-current > .nav-child {
-  display: block;
-}
-.post-toc .nav .active-current > .nav-child > .nav-item {
-  display: block;
-}
-.post-toc .nav .active > a {
-  border-bottom-color: #87daff;
-  color: #87daff;
-}
-.post-toc .nav .active-current > a {
-  color: #87daff;
-}
-.post-toc .nav .active-current > a:hover {
-  color: #87daff;
 }
 .footer {
   color: #999;
@@ -1488,6 +1442,7 @@ pre .javascript .function {
   font-family: 'Arial', "PingFang SC", "Microsoft YaHei", sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  margin-top: -60px;
 }
 @media (min-width: 1200px) {
   .post-body {
@@ -1748,6 +1703,8 @@ pre .javascript .function {
   font-size: 1.5em;
   font-weight: normal;
   margin: initial;
+  margin-top: -35px;
+  margin-bottom: 0px;
   text-align: center;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -2261,4 +2218,10 @@ embed {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.post-without-title .post-title {
+  display: none;
+}
+.post-without-title .post-body {
+  margin-top: -100px;
 }
